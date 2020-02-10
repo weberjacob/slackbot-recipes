@@ -1,4 +1,5 @@
 
+require('newrelic');
 const { App } = require('@slack/bolt');
 require('dotenv').config();
 
