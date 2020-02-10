@@ -1,6 +1,7 @@
 
 const { App } = require('@slack/bolt');
 require('dotenv').config();
+require('heroku-self-ping')("https://slack-recipesbot.herokuapp.com/");
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
