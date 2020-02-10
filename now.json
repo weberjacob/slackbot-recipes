@@ -5,28 +5,5 @@
       "src": "index.js",
       "use": "@now/node-server"
     }
-  ],
-  "routes": [
-    {
-      "src": "/slack/events",
-      "dest": "index.js",
-      "methods": [
-        "GET"
-      ]
-    },
-    {
-      "src": "/slack/events",
-      "dest": "index.js",
-      "methods": [
-        "POST"
-      ]
-    },
-    {
-      "src": "/test",
-      "dest": "index2.js",
-      "methods": [
-        "POST"
-      ]
-    }
   ]
 }
