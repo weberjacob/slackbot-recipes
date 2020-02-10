@@ -20,6 +20,13 @@
       "methods": [
         "POST"
       ]
+    },
+    {
+      "src": "/test",
+      "dest": "index2.js",
+      "methods": [
+        "POST"
+      ]
     }
   ]
 }
