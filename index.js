@@ -16,6 +16,7 @@ const expressapp = express();
 
 expressapp.get("/", (req, res) => {
   
+  res.send("Welcome to a basic express App");
 
   const app = new App({
     token: process.env.SLACK_BOT_TOKEN,
