@@ -2,10 +2,19 @@
 const { App } = require('@slack/bolt');
 require('dotenv').config();
 
+const Hapi = require('hapi');
+const pingmydyno = require('pingmydyno');
+const server = Hapi.server({ port, host });
+
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
   signingSecret: process.env.SLACK_SIGNING_SECRET
 });
+
+async () => {
+  await server.start();
+  pingmydyno('https://slack-recipesbot.herokuapp.com');
+};
 
 // Listen for a slash command invocation
 app.command('/recipe', ({ ack, payload, context }) => {
