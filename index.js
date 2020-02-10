@@ -3,7 +3,7 @@ const { App } = require('@slack/bolt');
 const express = require("express");
 const expressapp = express();
 
-const port = 3001;
+const port = 3000;
 
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
@@ -27,7 +27,7 @@ expressapp.get("/", (req, res) => {
 
 
 expressapp.get("/slack/events", (req, res) => {
-
+  res.send("Welcome to a basic express App");
   // Listen for a slash command invocation
   app.command('/recipe-local', ({ ack, payload, context }) => {
     // Acknowledge the command request
@@ -192,13 +192,13 @@ expressapp.get("/slack/events", (req, res) => {
 
   });
 
+});
 
-  (async () => {
+(async () => {
     // Start your app process.env.PORT || 3000
-    await app.start(process.env.PORT || 3000);
+    await app.start(process.env.PORT || 3001);
 
     console.log('⚡️ Bolt Recipe app is running!');
   })();
-});
 
 
