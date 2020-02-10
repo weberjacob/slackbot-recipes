@@ -1,15 +1,15 @@
 
 const { App } = require('@slack/bolt');
 const express = require("express");
-const express = express();
+const expressapp = express();
 
 const port = 5000;
 
 // Body parser
-express.use(express.urlencoded({ extended: false }));
+expressapp.use(express.urlencoded({ extended: false }));
 
 // Listen on port 5000
-express.listen(port, () => {
+expressapp.listen(port, () => {
   console.log(`Server is booming on port 5000
 Visit http://localhost:5000`);
 });

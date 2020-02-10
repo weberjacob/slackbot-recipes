@@ -9,14 +9,14 @@
   "routes": [
     {
       "src": "/slack/events",
-      "dest": "app.js",
+      "dest": "/app.js",
       "methods": [
         "GET"
       ]
     },
     {
       "src": "/slack/events",
-      "dest": "app.js",
+      "dest": "/app.js",
       "methods": [
         "POST"
       ]
