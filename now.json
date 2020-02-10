@@ -2,21 +2,21 @@
   "version": 2,
   "builds": [
     {
-      "src": "app.js",
+      "src": "index.js",
       "use": "@now/node-server"
     }
   ],
   "routes": [
     {
       "src": "/slack/events",
-      "dest": "/app.js",
+      "dest": "/index.js",
       "methods": [
         "GET"
       ]
     },
     {
       "src": "/slack/events",
-      "dest": "/app.js",
+      "dest": "/index.js",
       "methods": [
         "POST"
       ]
