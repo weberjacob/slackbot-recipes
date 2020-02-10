@@ -3,13 +3,16 @@
   "builds": [
     {
       "src": "index.js",
-      "use": "@now/node"
+      "use": "@now/node-server"
     }
   ],
   "routes": [
     {
       "src": "/slack/events",
-      "dest": "index.js"
+      "dest": "index.js",
+      "methods": [
+        "GET"
+      ]
     }
   ]
 }
