@@ -4,7 +4,6 @@
   "description": "Custom Slack bot to save and store user input",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "author": "",
@@ -12,6 +11,7 @@
   "dependencies": {
     "@slack/bolt": "^1.6.0",
     "express": "^4.17.1",
-    "googleapis": "^47.0.0"
+    "googleapis": "^47.0.0",
+    "nodemon": "^1.19.1"
   }
 }
