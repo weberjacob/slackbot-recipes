@@ -116,6 +116,14 @@ app.command('/recipe', ({ ack, payload, context }) => {
                     "emoji": true
                   },
                   "value": "Salad"
+                },
+                {
+                  "text": {
+                    "type": "plain_text",
+                    "text": "Side",
+                    "emoji": true
+                  },
+                  "value": "Side"
                 }
               ]
             },
